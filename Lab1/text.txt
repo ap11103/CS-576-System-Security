@@ -1,0 +1,1 @@
+Provided exercise.py and exercise2.py(both were the same) to execute command line injection and path traversal attacks
