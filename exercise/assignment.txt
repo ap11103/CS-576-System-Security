@@ -1,0 +1,25 @@
+GDB commands
+------------
+info registers rip rbp rsp
+- get the instruction pointer, frame pointer and stack pointer registers
+
+backtrace/ info stack/ where
+- shows all the stack frames
+
+info frame
+- description of a frame
+
+x/64xb $rsp
+- print 64 hex bytes starting from the top of the stack (indicated by $rsp)
+
+
+Exercise
+
+Tasks:
+- Use gdb to examine the stack
+- Break into the function that calls the vulnerable strcpy
+- Locate the current stack frame
+- Locate the buffer buf1 in the stack
+- Locate the return address in the stack
+- Cause a segmentation fault
+- Hint: Overflow the buffer until the function return address is overwritten
